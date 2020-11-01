@@ -30,6 +30,10 @@ public class Driver
 			int end1 = begin + (end - begin) /2; 
 			int begin2 = end1 + 1;
 			int end2 = end;
+			Driver.mergeSort(ar, begin1, end1);
+			Driver.mergeSort(ar, begin2, end2);
+			merge(ar, begin1, end1, begin2, end2);
+			
 		}
 	}
 	
