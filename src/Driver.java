@@ -15,7 +15,7 @@ public class Driver
 		
 		int[] ar2 = {2,3,1,5};
 		Driver.displayArray(ar2);
-		Driver.merg(ar2, 0, 1, 2, 3);
+		Driver.merge(ar2, 0, 1, 2, 3);
 		Driver.displayArray(ar2);
 		
 		//System.out.println(Driver.factorialIterative(5));
@@ -32,12 +32,12 @@ public class Driver
 			int end2 = end;
 			Driver.mergeSort(ar, begin1, end1);
 			Driver.mergeSort(ar, begin2, end2);
-			merge(ar, begin1, end1, begin2, end2);
+			Driver.merge(ar, begin1, end1, begin2, end2);
 			
 		}
 	}
 	
-	static void merg(int[] ar, int begin1, int end1, int begin2, int end2)
+	static void merge(int[] ar, int begin1, int end1, int begin2, int end2)
 	{
 		//assuming that everything from begin1 to begin 2 are already sorted and the same from end1 and end2
 		//Can't just take the length of the array that is passed in, because you could just be looking at a certain section 
